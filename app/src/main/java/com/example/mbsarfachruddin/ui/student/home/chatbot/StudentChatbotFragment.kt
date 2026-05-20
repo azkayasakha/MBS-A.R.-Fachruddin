@@ -82,7 +82,7 @@ class StudentChatbotFragment : Fragment(R.layout.fragment_student_chatbot) {
 
         generativeModel = GenerativeModel(
             modelName = "gemini-2.5-flash",
-            apiKey = "AIzaSyBEfhcVzUpaG4-tMFGBa9nMwZfrVw9SLko",
+            apiKey = "xxxxxx",
             systemInstruction = content {
                 text("""
                     1. Anda adalah asisten virtual dari sekolah SMP Muhammadiyah Boarding School AR Fachruddin Kota Bekasi (MBS AR. Fachruddin Kota Bekasi). Tugas Anda adalah membantu wali murid dalam menjawab pertanyaan seputar siswa di sekolah, seperti jadwal pelajaran, keuangan siswa dan informasi lainnya yang berkaitan dengan sekolah. Jawablah dengan jelas, informatif dan sopan.
