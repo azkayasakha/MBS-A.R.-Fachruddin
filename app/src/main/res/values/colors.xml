@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="colorPrimary">#4CAF50</color>         <!-- Green 500 -->
+    <color name="colorPrimaryDark">#46CC15</color>
+    <color name="colorOnPrimary">#FFFFFF</color>       <!-- Text on green -->
+
+    <!-- Secondary Colors -->
+    <color name="colorSecondary">#388E3C</color>       <!-- Green 700 -->
+    <color name="colorOnSecondary">#FFFFFF</color>
+
+    <!-- Tertiary Colors (Optional) -->
+    <color name="colorTertiary">#69F0AE</color>        <!-- Green A200 -->
+    <color name="colorOnTertiary">#000000</color>
+
+    <color name="colorSurface">#F1F8E9</color>         <!-- Soft green bg -->
+    <color name="colorOnSurface">#1B5E20</color>
+
+    <color name="colorPrimaryContainer">#C8E6C9</color>   <!-- Hijau muda -->
+    <color name="colorSecondaryContainer">#A5D6A7</color>
+
+    <color name="colorPrimaryYellow">#FFEB3B</color>
+    <color name="colorSecondaryYellow">#FBC02D</color>
+
+    <!-- Error (default red) -->
+    <color name="colorError">#B00020</color>
+    <color name="colorOnError">#FFFFFF</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="light">#F8F9FA</color>
+
+    <!-- Additional Colors -->
+    <color name="bubble_sent_bg">#DCF8C6</color>
+    <color name="bubble_border">#E0E0E0</color>
+
+</resources>

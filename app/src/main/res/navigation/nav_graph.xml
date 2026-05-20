@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.mbsarfachruddin.ui.splash.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.mbsarfachruddin.ui.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_studentHomeFragment"
+            app:destination="@id/studentHomeFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_loginFragment_to_musyrifHomeFragment"
+            app:destination="@id/musyrifHomeFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_loginFragment_to_teacherHomeFragment"
+            app:destination="@id/teacherHomeFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/studentHomeFragment"
+        android:name="com.example.mbsarfachruddin.ui.student.home.StudentHomeFragment"
+        android:label="fragment_student_home"
+        tools:layout="@layout/fragment_student_home" >
+        <action
+            android:id="@+id/action_studentHomeFragment_to_studentTahfidzFragment"
+            app:destination="@id/studentTahfidzFragment" />
+        <action
+            android:id="@+id/action_studentHomeFragment_to_studentPresenceFragment"
+            app:destination="@id/studentPresenceFragment" />
+        <action
+            android:id="@+id/action_studentHomeFragment_to_studentWalletFragment"
+            app:destination="@id/studentWalletFragment" />
+        <action
+            android:id="@+id/action_studentHomeFragment_to_studentPrayerTimeFragment"
+            app:destination="@id/studentPrayerTimeFragment" />
+        <action
+            android:id="@+id/action_studentHomeFragment_to_studentQuranFragment"
+            app:destination="@id/studentQuranFragment" />
+        <action
+            android:id="@+id/action_studentHomeFragment_to_studentChatbotFragment"
+            app:destination="@id/studentChatbotFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/studentAnnouncementFragment"
+        android:name="com.example.mbsarfachruddin.ui.student.announcement.StudentAnnouncementFragment"
+        android:label="fragment_student_announcement"
+        tools:layout="@layout/fragment_student_announcement" />
+    <fragment
+        android:id="@+id/studentSettingFragment"
+        android:name="com.example.mbsarfachruddin.ui.student.setting.StudentSettingFragment"
+        android:label="fragment_student_setting"
+        tools:layout="@layout/fragment_student_setting" >
+        <action
+            android:id="@+id/action_studentSettingFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_studentSettingFragment_to_studentSettingUsernameFragment"
+            app:destination="@id/studentSettingUsernameFragment" />
+        <action
+            android:id="@+id/action_studentSettingFragment_to_studentSettingPasswordFragment"
+            app:destination="@id/studentSettingPasswordFragment" />
+        <action
+            android:id="@+id/action_studentSettingFragment_to_studentSettingNotificationFragment"
+            app:destination="@id/studentSettingNotificationFragment" />
+        <action
+            android:id="@+id/action_studentSettingFragment_to_studentSettingLocationFragment"
+            app:destination="@id/studentSettingLocationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/musyrifHomeFragment"
+        android:name="com.example.mbsarfachruddin.ui.musyrif.home.MusyrifHomeFragment"
+        android:label="fragment_musyrif_home"
+        tools:layout="@layout/fragment_musyrif_home" >
+        <action
+            android:id="@+id/action_musyrifHomeFragment_to_musyrifWalletFragment"
+            app:destination="@id/musyrifWalletFragment" />
+        <action
+            android:id="@+id/action_musyrifHomeFragment_to_musyrifTahfidzFragment"
+            app:destination="@id/musyrifTahfidzFragment" />
+        <action
+            android:id="@+id/action_musyrifHomeFragment_to_musyrifQuranFragment"
+            app:destination="@id/musyrifQuranFragment" />
+        <action
+            android:id="@+id/action_musyrifHomeFragment_to_musyrifPrayerTimeFragment"
+            app:destination="@id/musyrifPrayerTimeFragment" />
+        <action
+            android:id="@+id/action_musyrifHomeFragment_to_musyrifPresenceFragment"
+            app:destination="@id/musyrifPresenceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/musyrifSettingFragment"
+        android:name="com.example.mbsarfachruddin.ui.musyrif.setting.MusyrifSettingFragment"
+        android:label="fragment_musyrif_setting"
+        tools:layout="@layout/fragment_musyrif_setting" >
+        <action
+            android:id="@+id/action_musyrifSettingFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_musyrifSettingFragment_to_musyrifSettingUsernameFragment"
+            app:destination="@id/musyrifSettingUsernameFragment" />
+        <action
+            android:id="@+id/action_musyrifSettingFragment_to_musyrifSettingPasswordFragment"
+            app:destination="@id/musyrifSettingPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/studentPresenceFragment"
+        android:name="com.example.mbsarfachruddin.ui.student.home.presence.StudentPresenceFragment"
+        android:label="fragment_student_presence"
+        tools:layout="@layout/fragment_student_presence" >
+        <action
+            android:id="@+id/action_studentPresenceFragment_to_studentPresenceLessonFragment"
+            app:destination="@id/studentPresenceLessonFragment" />
+        <action
+            android:id="@+id/action_studentPresenceFragment_to_studentPresencePrayerFragment"
+            app:destination="@id/studentPresencePrayerFragment" />
+        <action
+            android:id="@+id/action_studentPresenceFragment_to_studentPresenceTahfidzFragment"
+            app:destination="@id/studentPresenceTahfidzFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/studentTahfidzFragment"
+        android:name="com.example.mbsarfachruddin.ui.student.home.tahfidz.StudentTahfidzFragment"
+        android:label="fragment_student_tahfidz"
+        tools:layout="@layout/fragment_student_tahfidz" />
+    <fragment
+        android:id="@+id/studentWalletFragment"
+        android:name="com.example.mbsarfachruddin.ui.student.home.wallet.StudentWalletFragment"
+        android:label="fragment_student_wallet"
+        tools:layout="@layout/fragment_student_wallet" />
+    <fragment
+        android:id="@+id/musyrifWalletFragment"
+        android:name="com.example.mbsarfachruddin.ui.musyrif.home.wallet.MusyrifWalletFragment"
+        android:label="fragment_musyrif_wallet"
+        tools:layout="@layout/fragment_musyrif_wallet" />
+    <fragment
+        android:id="@+id/musyrifTahfidzFragment"
+        android:name="com.example.mbsarfachruddin.ui.musyrif.home.tahfidz.MusyrifTahfidzFragment"
+        android:label="fragment_musyrif_tahfidz"
+        tools:layout="@layout/fragment_musyrif_tahfidz" >
+        <action
+            android:id="@+id/action_musyrifTahfidzFragment_to_musyrifTahfidzDetailFragment"
+            app:destination="@id/musyrifTahfidzDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/musyrifTahfidzDetailFragment"
+        android:name="com.example.mbsarfachruddin.ui.musyrif.home.tahfidz.MusyrifTahfidzDetailFragment"
+        android:label="fragment_musyrif_tahfidz_detail"
+        tools:layout="@layout/fragment_musyrif_tahfidz_detail" />
+    <fragment
+        android:id="@+id/musyrifQuranFragment"
+        android:name="com.example.mbsarfachruddin.ui.musyrif.home.quran.MusyrifQuranFragment"
+        android:label="fragment_musyrif_quran"
+        tools:layout="@layout/fragment_musyrif_quran" >
+        <action
+            android:id="@+id/action_musyrifQuranFragment_to_musyrifQuranDetailFragment"
+            app:destination="@id/musyrifQuranDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/musyrifQuranDetailFragment"
+        android:name="com.example.mbsarfachruddin.ui.musyrif.home.quran.MusyrifQuranDetailFragment"
+        android:label="fragment_musyrif_quran_detail"
+        tools:layout="@layout/fragment_musyrif_quran_detail" />
+    <fragment
+        android:id="@+id/musyrifPrayerTimeFragment"
+        android:name="com.example.mbsarfachruddin.ui.musyrif.home.prayertime.MusyrifPrayerTimeFragment"
+        android:label="fragment_musyrif_prayer_time"
+        tools:layout="@layout/fragment_musyrif_prayer_time" />
+    <fragment
+        android:id="@+id/studentPrayerTimeFragment"
+        android:name="com.example.mbsarfachruddin.ui.student.home.prayertime.StudentPrayerTimeFragment"
+        android:label="fragment_student_prayer_time"
+        tools:layout="@layout/fragment_student_prayer_time" />
+    <fragment
+        android:id="@+id/studentQuranFragment"
+        android:name="com.example.mbsarfachruddin.ui.student.home.quran.StudentQuranFragment"
+        android:label="fragment_student_quran"
+        tools:layout="@layout/fragment_student_quran" >
+        <action
+            android:id="@+id/action_studentQuranFragment_to_studentQuranDetailFragment"
+            app:destination="@id/studentQuranDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/studentQuranDetailFragment"
+        android:name="com.example.mbsarfachruddin.ui.student.home.quran.StudentQuranDetailFragment"
+        android:label="fragment_student_quran_detail"
+        tools:layout="@layout/fragment_student_quran_detail" />
+    <fragment
+        android:id="@+id/studentPresenceLessonFragment"
+        android:name="com.example.mbsarfachruddin.ui.student.home.presence.StudentPresenceLessonFragment"
+        android:label="fragment_student_presence_lesson"
+        tools:layout="@layout/fragment_student_presence_lesson" />
+    <fragment
+        android:id="@+id/studentPresencePrayerFragment"
+        android:name="com.example.mbsarfachruddin.ui.student.home.presence.StudentPresencePrayerFragment"
+        android:label="fragment_student_presence_prayer"
+        tools:layout="@layout/fragment_student_presence_prayer" />
+    <fragment
+        android:id="@+id/studentPresenceTahfidzFragment"
+        android:name="com.example.mbsarfachruddin.ui.student.home.presence.StudentPresenceTahfidzFragment"
+        android:label="fragment_student_presence_tahfidz"
+        tools:layout="@layout/fragment_student_presence_tahfidz" />
+    <fragment
+        android:id="@+id/musyrifAnnouncementFragment"
+        android:name="com.example.mbsarfachruddin.ui.musyrif.announcement.MusyrifAnnouncementFragment"
+        android:label="fragment_musyrif_announcement"
+        tools:layout="@layout/fragment_musyrif_announcement" />
+    <fragment
+        android:id="@+id/teacherAnnouncementFragment"
+        android:name="com.example.mbsarfachruddin.ui.teacher.announcement.TeacherAnnouncementFragment"
+        android:label="fragment_teacher_announcement"
+        tools:layout="@layout/fragment_teacher_announcement" />
+    <fragment
+        android:id="@+id/teacherHomeFragment"
+        android:name="com.example.mbsarfachruddin.ui.teacher.home.TeacherHomeFragment"
+        android:label="fragment_teacher_home"
+        tools:layout="@layout/fragment_teacher_home" >
+        <action
+            android:id="@+id/action_teacherHomeFragment_to_teacherPrayerTimeFragment"
+            app:destination="@id/teacherPrayerTimeFragment" />
+        <action
+            android:id="@+id/action_teacherHomeFragment_to_teacherQuranFragment"
+            app:destination="@id/teacherQuranFragment" />
+        <action
+            android:id="@+id/action_teacherHomeFragment_to_teacherPresenceFragment"
+            app:destination="@id/teacherPresenceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/teacherSettingFragment"
+        android:name="com.example.mbsarfachruddin.ui.teacher.setting.TeacherSettingFragment"
+        android:label="fragment_teacher_setting"
+        tools:layout="@layout/fragment_teacher_setting" >
+        <action
+            android:id="@+id/action_teacherSettingFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_teacherSettingFragment_to_teacherSettingUsernameFragment"
+            app:destination="@id/teacherSettingUsernameFragment" />
+        <action
+            android:id="@+id/action_teacherSettingFragment_to_teacherSettingPasswordFragment"
+            app:destination="@id/teacherSettingPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/studentSettingUsernameFragment"
+        android:name="com.example.mbsarfachruddin.ui.student.setting.account.StudentSettingUsernameFragment"
+        android:label="fragment_student_setting_username"
+        tools:layout="@layout/fragment_student_setting_username" />
+    <fragment
+        android:id="@+id/studentSettingPasswordFragment"
+        android:name="com.example.mbsarfachruddin.ui.student.setting.account.StudentSettingPasswordFragment"
+        android:label="fragment_student_setting_password"
+        tools:layout="@layout/fragment_student_setting_password" />
+    <fragment
+        android:id="@+id/studentSettingNotificationFragment"
+        android:name="com.example.mbsarfachruddin.ui.student.setting.application.StudentSettingNotificationFragment"
+        android:label="fragment_student_setting_notification"
+        tools:layout="@layout/fragment_student_setting_notification" />
+    <fragment
+        android:id="@+id/studentSettingLocationFragment"
+        android:name="com.example.mbsarfachruddin.ui.student.setting.application.StudentSettingLocationFragment"
+        android:label="fragment_student_setting_location"
+        tools:layout="@layout/fragment_student_setting_location" />
+    <fragment
+        android:id="@+id/musyrifPresenceFragment"
+        android:name="com.example.mbsarfachruddin.ui.musyrif.home.presence.MusyrifPresenceFragment"
+        android:label="fragment_musyrif_presence"
+        tools:layout="@layout/fragment_musyrif_presence" >
+        <action
+            android:id="@+id/action_musyrifPresenceFragment_to_musyrifPresenceTahfidzFragment"
+            app:destination="@id/musyrifPresenceTahfidzFragment" />
+        <action
+            android:id="@+id/action_musyrifPresenceFragment_to_musyrifPresencePrayerFragment"
+            app:destination="@id/musyrifPresencePrayerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/musyrifPresencePrayerFragment"
+        android:name="com.example.mbsarfachruddin.ui.musyrif.home.presence.MusyrifPresencePrayerFragment"
+        android:label="fragment_musyrif_presence_prayer"
+        tools:layout="@layout/fragment_musyrif_presence_prayer" />
+    <fragment
+        android:id="@+id/musyrifPresenceTahfidzFragment"
+        android:name="com.example.mbsarfachruddin.ui.musyrif.home.presence.MusyrifPresenceTahfidzFragment"
+        android:label="fragment_musyrif_presence_tahfidz"
+        tools:layout="@layout/fragment_musyrif_presence_tahfidz" />
+    <fragment
+        android:id="@+id/teacherPrayerTimeFragment"
+        android:name="com.example.mbsarfachruddin.ui.teacher.home.prayertime.TeacherPrayerTimeFragment"
+        android:label="fragment_teacher_prayer_time"
+        tools:layout="@layout/fragment_teacher_prayer_time" />
+    <fragment
+        android:id="@+id/teacherQuranFragment"
+        android:name="com.example.mbsarfachruddin.ui.teacher.home.quran.TeacherQuranFragment"
+        android:label="fragment_teacher_quran"
+        tools:layout="@layout/fragment_teacher_quran" >
+        <action
+            android:id="@+id/action_teacherQuranFragment_to_teacherQuranDetailFragment"
+            app:destination="@id/teacherQuranDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/teacherQuranDetailFragment"
+        android:name="com.example.mbsarfachruddin.ui.teacher.home.quran.TeacherQuranDetailFragment"
+        android:label="fragment_teacher_quran_detail"
+        tools:layout="@layout/fragment_teacher_quran_detail" />
+    <fragment
+        android:id="@+id/musyrifSettingPasswordFragment"
+        android:name="com.example.mbsarfachruddin.ui.musyrif.setting.account.MusyrifSettingPasswordFragment"
+        android:label="fragment_musyrif_setting_password"
+        tools:layout="@layout/fragment_musyrif_setting_password" />
+    <fragment
+        android:id="@+id/musyrifSettingUsernameFragment"
+        android:name="com.example.mbsarfachruddin.ui.musyrif.setting.account.MusyrifSettingUsernameFragment"
+        android:label="fragment_musyrif_setting_username"
+        tools:layout="@layout/fragment_musyrif_setting_username" />
+    <fragment
+        android:id="@+id/teacherSettingPasswordFragment"
+        android:name="com.example.mbsarfachruddin.ui.teacher.setting.account.TeacherSettingPasswordFragment"
+        android:label="fragment_teacher_setting_password"
+        tools:layout="@layout/fragment_teacher_setting_password" />
+    <fragment
+        android:id="@+id/teacherSettingUsernameFragment"
+        android:name="com.example.mbsarfachruddin.ui.teacher.setting.account.TeacherSettingUsernameFragment"
+        android:label="fragment_teacher_setting_username"
+        tools:layout="@layout/fragment_teacher_setting_username" />
+    <fragment
+        android:id="@+id/teacherPresenceFragment"
+        android:name="com.example.mbsarfachruddin.ui.teacher.home.presence.TeacherPresenceFragment"
+        android:label="fragment_teacher_presence"
+        tools:layout="@layout/fragment_teacher_presence" >
+        <action
+            android:id="@+id/action_teacherPresenceFragment_to_teacherPresenceDetailFragment"
+            app:destination="@id/teacherPresenceDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/teacherPresenceDetailFragment"
+        android:name="com.example.mbsarfachruddin.ui.teacher.home.presence.TeacherPresenceDetailFragment"
+        android:label="fragment_teacher_presence_detail"
+        tools:layout="@layout/fragment_teacher_presence_detail" />
+    <fragment
+        android:id="@+id/studentChatbotFragment"
+        android:name="com.example.mbsarfachruddin.ui.student.home.chatbot.StudentChatbotFragment"
+        android:label="fragment_student_chatbot"
+        tools:layout="@layout/fragment_student_chatbot" />
+</navigation>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "72210496364",
+    "project_id": "mbs-ar-fachruddin",
+    "storage_bucket": "mbs-ar-fachruddin.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:72210496364:android:39e4d09c8ef7a948e69149",
+        "android_client_info": {
+          "package_name": "com.example.mbsarfachruddin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoCsDiJIWIe-8BUsG7R6c4pCeAgc9hgvY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

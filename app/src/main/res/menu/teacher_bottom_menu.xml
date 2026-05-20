@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/teacherHomeFragment"
+        android:icon="@drawable/ic_menu_home"
+        android:title="Beranda"/>
+    <item
+        android:id="@+id/teacherAnnouncementFragment"
+        android:icon="@drawable/ic_menu_announcement"
+        android:title="Pengumuman"/>
+    <item
+        android:id="@+id/teacherSettingFragment"
+        android:icon="@drawable/ic_menu_setting"
+        android:title="Pengaturan"/>
+</menu>
